@@ -1,18 +1,26 @@
 .list_container {
   display: flex;
   justify-content: center;
+  gap: 3rem;
 }
 
 .list_item {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.1rem;
+  transition: opacity 0.5s;
+}
+
+.list_item:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .album_img {
-  width: 300px;
+  width: 250px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px #dedede;
+  box-shadow: 2px 0 10px #dedede;
+  border: 1px solid rgb(221, 221, 221);
 }
 
 .album_info {
