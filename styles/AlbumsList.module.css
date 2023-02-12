@@ -1,7 +1,10 @@
 .list_container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 3rem;
+  flex-wrap: wrap;
+  padding-top: 3rem;
 }
 
 .list_item {

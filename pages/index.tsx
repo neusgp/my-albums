@@ -19,7 +19,7 @@ export default function Home({ albums }: { albums: Album[] }) {
       </Head>
       <div id="main">
         <div className={styles.title}>
-          <h1>my albums</h1>
+          <h1>My Albums</h1>
           <AddButton />
         </div>
 
