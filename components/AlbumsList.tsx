@@ -5,7 +5,7 @@ export const AlbumsList = ({ albums }: { albums: Album[] }) => {
   return (
     <div className={styles.list_container}>
       {albums.map((album) => {
-        const hasLongTitle = album.title.length >= 20;
+        const hasLongTitle = album.title.length >= 19;
         return (
           <div key={album.title} className={styles.list_item}>
             <img src={album.img} alt="CD image" className={styles.album_img} />

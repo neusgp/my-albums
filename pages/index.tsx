@@ -4,7 +4,7 @@ import { Album } from "../types/albums";
 import { Data } from "../types/data";
 import Head from "next/head";
 import { AddButton } from "../components/AddButton";
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Home.module.css";
 
 export default function Home({ albums }: { albums: Album[] }) {
   return (
@@ -18,8 +18,15 @@ export default function Home({ albums }: { albums: Album[] }) {
         />
       </Head>
       <div id="main">
-        <div className={styles.title}>
-          <h1>My Albums</h1>
+        <div className={styles.header}>
+          <div className={styles.title}>
+            <h1>My Albums</h1>
+            <p className={styles.signature}>
+              A Next.js app with mongoDB, by{" "}
+              <a href="https://github.com/neusgp/my-albums">neusgp</a>
+            </p>
+          </div>
+
           <AddButton />
         </div>
 
